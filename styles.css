@@ -5,6 +5,7 @@
   --mediumGrey: hsl(216, 12%, 54%);
   --darkBlue: hsl(213, 19%, 18%);
   --veryDarkBlue: hsl(216, 12%, 8%);
+  --lineHeight: 1.3rem;
 }
 
 *,
@@ -65,7 +66,7 @@ body {
 
 .description {
   color: var(--mediumGrey);
-  line-height: 1.3rem;
+  line-height: var(--lineHeight);
 }
 
 .options {
@@ -125,6 +126,7 @@ body {
   padding: 0.7rem;
   border-radius: 1.7rem;
   color: var(--primary);
+  margin: 2rem 0;
 }
 
 .form.is-send {
@@ -133,4 +135,9 @@ body {
 
 .submitted.is-active {
   display: block;
+}
+
+.submitted-description {
+  color: var(--mediumGrey);
+  line-height: var(--lineHeight);
 }
