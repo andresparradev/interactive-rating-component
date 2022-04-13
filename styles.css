@@ -141,3 +141,16 @@ body {
   color: var(--mediumGrey);
   line-height: var(--lineHeight);
 }
+
+.footer {
+  width: 90%;
+  max-width: 600px;
+  color: var(--white);
+  margin: 3rem auto 0 auto;
+  text-align: center;
+  line-height: var(--lineHeight);
+}
+
+.footer a {
+  color: var(--primary);
+}
