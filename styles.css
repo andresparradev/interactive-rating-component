@@ -1,0 +1,136 @@
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--darkBlue);
+  border: none;
+  color: var(--white);
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--veryDarkBlue);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating-container {
+  background: radial-gradient(var(--veryDarkBlue), var(--darkBlue));
+  color: var(--white);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+}
+
+.star {
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+}
+
+.star-icon {
+  width: 0.9rem;
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  color: var(--mediumGrey);
+  line-height: 1.3rem;
+}
+
+.options {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.options input {
+  display: none;
+}
+
+.options-item {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.options-item:hover {
+  background-color: var(--mediumGrey);
+}
+
+.options-item:active,
+.options-item.is-active {
+  background-color: var(--primary);
+}
+
+.btn-submit {
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 1.7rem;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.2s;
+}
+
+.btn-submit:active {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.submitted {
+  text-align: center;
+  display: none;
+}
+
+.submitted-response {
+  background-color: var(--darkBlue);
+  padding: 0.7rem;
+  border-radius: 1.7rem;
+  color: var(--primary);
+}
+
+.form.is-send {
+  display: none;
+}
+
+.submitted.is-active {
+  display: block;
+}

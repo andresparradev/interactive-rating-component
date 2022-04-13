@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="rating-container">
+      <div class="form" id="rating-form">
+        <div class="star circle">
+          <img class="star-icon" src="images/icon-star.svg" alt="Icon star" />
+        </div>
+        <h1 class="title">How did we do?</h1>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form id="form-options">
+          <div class="options">
+            <input type="radio" name="rating" id="rating-one" value="1" />
+            <label for="rating-one" class="options-item circle">1</label>
+
+            <input type="radio" name="rating" id="rating-two" value="2" />
+            <label for="rating-two" class="options-item circle">2</label>
+
+            <input type="radio" name="rating" id="rating-three" value="3" />
+            <label for="rating-three" class="options-item circle">3</label>
+
+            <input type="radio" name="rating" id="rating-four" value="4" />
+            <label for="rating-four" class="options-item circle">4</label>
+
+            <input type="radio" name="rating" id="rating-five" value="5" />
+            <label for="rating-five" class="options-item circle">5</label>
+          </div>
+
+          <button class="btn-submit" id="btn-submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="submitted" id="submitted">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt=""
+          class="submite-img"
+        />
+
+        <p class="submitted-response"></p>
+        <h2 class="submitted-title">Thank you!</h2>
+        <p class="submitted-description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
